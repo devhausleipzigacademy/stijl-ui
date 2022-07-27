@@ -1,0 +1,22 @@
+{
+  "name": "stijl-ui",
+  "version": "0.0.1",
+  "description": "Devhaus Leipzig Design System",
+  "source": "src/stijl.ts",
+  "exports": {
+    "require": "./dist/stijl.cjs",
+    "modern": "./dist/stijl.modern.js"
+  },
+  "main": "./dist/stijl.cjs",
+  "module": "./dist/stijl.module.js",
+  "unpkg": "./dist/stijl.umd.js",
+  "author": "Dan McAtee",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.0"
+  }
+}
