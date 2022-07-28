@@ -1,0 +1,64 @@
+import { slateDark } from '@radix-ui/colors';
+import { globalCss } from './stitches.config';
+
+export const globalStyles = globalCss({
+  '@font-face': [
+    {
+      fontFamily: 'Walsheim',
+      src: 'local("Walsheim"), url("/fonts/GTWalsheimPro-Regular.woff")',
+      fontWeight: 'normal',
+    },
+    {
+      fontFamily: 'Walsheim',
+      src: 'local("Walsheim"), url("/fonts/GTWalsheimPro-Medium.woff")',
+      fontWeight: 500,
+    },
+    {
+      fontFamily: 'Walsheim',
+      src: 'local("Walsheim"), url("/fonts/GTWalsheimPro-Bold.woff")',
+      fontWeight: 'bold',
+    },
+  ],
+  'html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video':
+    {
+      margin: '0',
+      padding: '0',
+      border: '0',
+      fontSize: '100%',
+      font: 'inherit',
+      verticalAlign: 'baseline',
+    },
+  'article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section':
+    {
+      display: 'block',
+    },
+  'body, button': {
+    fontFamily: 'Walsheim, sans-serif',
+    color: slateDark.slate11,
+  },
+  '*[hidden]': {
+    display: 'none',
+  },
+  body: {
+    lineHeight: '1',
+  },
+  a: {
+    textDecoration: 'none',
+    color: 'inherit',
+  },
+  'ol, ul': {
+    listStyle: 'none',
+  },
+  'blockquote, q': {
+    quotes: 'none',
+  },
+  'blockquote:before, blockquote:after, q:before, q:after': {
+    content: '',
+    // @ts-ignore
+    // eslint-disable-next-line no-dupe-keys
+    content: 'none',
+  },
+  table: {
+    borderSpacing: '0',
+  },
+});
