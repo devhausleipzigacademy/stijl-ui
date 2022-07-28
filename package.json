@@ -1,6 +1,6 @@
 {
-  "name": "stijl-ui",
-  "version": "0.0.1",
+  "name": "@devhaus/stijl-ui",
+  "version": "0.0.2",
   "description": "Devhaus Leipzig Design System",
   "main": "./dist/cjs/stijl.js",
   "module": "./dist/esm/stijl.js",
