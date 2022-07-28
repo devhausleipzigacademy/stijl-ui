@@ -31,9 +31,9 @@ export const globalStyles = globalCss({
     borderColor: 'currentColor' /* 2 */,
   },
 
-  '::before, ::after': {
-    content: '',
-  },
+  // '::before, ::after': {
+  //   content: '',
+  // },
 
   /*
 1. Use a consistent sensible line-height in all browsers.
