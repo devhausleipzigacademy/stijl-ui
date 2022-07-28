@@ -1,16 +1,6 @@
 import { createStitches } from '@stitches/react';
 import type * as Stitches from '@stitches/react';
-import {
-  blackA,
-  mauveDark,
-  mauveDarkA,
-  tealDark,
-  tealDarkA,
-  violetDark,
-  violetDarkA,
-  redDark,
-  slateDark,
-} from '@radix-ui/colors';
+import { red, blue, yellow, slateDark } from '@radix-ui/colors';
 
 export const {
   styled,
@@ -24,17 +14,12 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      ...blackA,
-      ...mauveDark,
-      ...mauveDarkA,
-      ...tealDark,
-      ...tealDarkA,
-      ...violetDark,
-      ...violetDarkA,
-      ...redDark,
+      ...red,
+      ...blue,
+      ...yellow,
       ...slateDark,
-      subtleText: '$mauve11',
-      text: '$mauve12',
+      subtleText: '$slate11',
+      text: '$slate12',
     },
     fontSizes: {
       xs: '0.75rem',
@@ -78,6 +63,8 @@ export const {
       loose: 2,
     },
     space: {
+      full: '100%',
+      '1/2': '50%',
       px: '1px',
       1: '0.25rem',
       '1.5': '0.375rem',
