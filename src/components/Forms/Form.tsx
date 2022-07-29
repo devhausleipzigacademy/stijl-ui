@@ -1,3 +1,3 @@
 import { styled } from '../../lib/stitches.config';
 
-export const Button = styled('button', {});
+export const Form = styled('form', {});
